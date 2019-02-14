@@ -5,7 +5,7 @@ export const makeReducer = (handlers = {}, initialState = {}) => {
         const prevState = state || initialState;
 
         return hasOwnProperty.call(handlers, action.type)
-            ? handlers[action.type](state, action)
+            ? handlers[action.type](prevState, action)
             : prevState;
     };
 };

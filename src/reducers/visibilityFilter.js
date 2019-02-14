@@ -6,8 +6,7 @@ const initialState = VISIBILITY_FILTERS.ALL;
 const handlers = {
     [ACTION_TYPES.SET_VISIBILITY_FILTER](state, action) {
         return action.payload.filter
-    },
-    initialState
+    }
 };
 
 export const visibilityFilterReducer = makeReducer(
