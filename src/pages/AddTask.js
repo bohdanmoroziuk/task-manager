@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect, Link } from 'react-router-dom';
 import { today } from '../helpers';
-import { addTask } from '../actions';
+import { addTask } from '../redux/actions';
 import Task from '../models/Task';
 
 class AddTask extends Component {

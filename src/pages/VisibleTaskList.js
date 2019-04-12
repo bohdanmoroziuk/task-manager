@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
-import { completeTask, removeTask } from '../actions';
-import { selectVisibleTasksByKeyword } from '../selectors';
+import { completeTask, removeTask } from '../redux/actions';
+import { selectVisibleTasksByKeyword } from '../redux/selectors';
 
 import TaskList from '../components/TaskList';
 

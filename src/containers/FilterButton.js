@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 
 import Button from '../components/Button';
 
-import { setVisibilityFilter } from '../actions';
-import { selectVisibilityFilter } from '../selectors';
+import { setVisibilityFilter } from '../redux/actions';
+import { selectVisibilityFilter } from '../redux/selectors';
 
 const mapStateToProps = (state, props) => ({
     active: props.filter === selectVisibilityFilter(state)

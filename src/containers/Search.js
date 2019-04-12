@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { setKeyword } from '../actions';
-import { selectKeyword } from '../selectors';
+import { setKeyword } from '../redux/actions';
+import { selectKeyword } from '../redux/selectors';
 
 const Search = ({ keyword, setKeyword }) => (
     <form className="mt-5">

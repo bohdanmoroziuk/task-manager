@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { editTask } from '../actions';
-import { selectTaskById } from '../selectors';
+import { editTask } from '../redux/actions';
+import { selectTaskById } from '../redux/selectors';
 
 class TaskCard extends Component {
     state = {
