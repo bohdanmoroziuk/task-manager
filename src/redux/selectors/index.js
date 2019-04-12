@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { VISIBILITY_FILTERS } from '../constants';
+import { VISIBILITY_FILTERS } from '../../constants';
 
 export const selectTasks = state => 
     state.tasks;

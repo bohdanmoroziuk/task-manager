@@ -1,4 +1,5 @@
-import { ACTION_TYPES, VISIBILITY_FILTERS } from '../constants';
+import { VISIBILITY_FILTERS } from '../../constants';
+import ACTION_TYPES from '../actions/types';
 import { makeReducer } from './reducer';
 
 const initialState = VISIBILITY_FILTERS.ALL;

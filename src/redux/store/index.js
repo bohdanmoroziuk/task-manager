@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 import { rootReducer } from '../reducers/root';
-import { DATA_STORE_KEY } from '../constants';
-import DataStore from '../datastore/DataStore'; 
+import { DATA_STORE_KEY } from '../../constants';
+import DataStore from '../../datastore/DataStore'; 
 
 const initialState = DataStore.restore(DATA_STORE_KEY);
 

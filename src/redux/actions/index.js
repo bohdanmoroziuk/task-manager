@@ -1,4 +1,4 @@
-import { ACTION_TYPES } from '../constants';
+import ACTION_TYPES from './types';
 import { makeActionCreator } from './action';
 
 export const addTask = makeActionCreator(ACTION_TYPES.ADD_TASK);

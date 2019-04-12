@@ -1,4 +1,4 @@
-import { ACTION_TYPES } from '../constants';
+import ACTION_TYPES from '../actions/types';
 import { makeReducer } from './reducer';
 
 const initialState = [];
