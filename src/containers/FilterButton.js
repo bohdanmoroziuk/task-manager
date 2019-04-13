@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import Button from '../components/Button';
+import Button from '../components/shared/Button';
 
 import { setVisibilityFilter } from '../redux/actions';
 import { selectVisibilityFilter } from '../redux/selectors';

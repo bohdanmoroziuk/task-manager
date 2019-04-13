@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { completeTask, removeTask } from '../redux/actions';
 import { selectVisibleTasksByKeyword } from '../redux/selectors';
 
-import TaskList from '../components/TaskList';
+import TaskList from '../components/task/TaskList';
 
 const mapStateToProps = state => ({
     tasks: selectVisibleTasksByKeyword(state)

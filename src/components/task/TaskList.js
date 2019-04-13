@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 
-import Message from './Message';
+import Message from '../shared/Message';
 import TaskItem from './TaskItem';
 import TaskFilters from './TaskFilters';
-import Search from '../containers/Search';
+import Search from '../../containers/Search';
 
 const TaskList = ({ tasks = [], handleComplete, handleRemove }) => (
     <Fragment>

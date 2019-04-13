@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { VISIBILITY_FILTERS } from '../constants';
+import { VISIBILITY_FILTERS } from '../../constants';
 
-import FilterButton from '../containers/FilterButton';
+import FilterButton from '../../containers/FilterButton';
 
 const TaskFilters = () => (
     <div className="btn-group mt-5" role="group" aria-label="Basic example">

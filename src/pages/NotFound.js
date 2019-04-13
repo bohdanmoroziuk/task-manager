@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Message from '../components/Message';
+import Message from '../components/shared/Message';
 
 const NotFound = () => (
     <Message
