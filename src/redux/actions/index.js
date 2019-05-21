@@ -11,4 +11,6 @@ export const completeTask = makeActionCreator(ACTION_TYPES.COMPLETE_TASK);
 
 export const setKeyword = makeActionCreator(ACTION_TYPES.SET_KEYWORD);
 
-export const setVisibilityFilter = makeActionCreator(ACTION_TYPES.SET_VISIBILITY_FILTER);
+export const setVisibilityFilter = makeActionCreator(
+  ACTION_TYPES.SET_VISIBILITY_FILTER
+);
