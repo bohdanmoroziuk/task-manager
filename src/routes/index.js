@@ -7,26 +7,27 @@ const NotFound = lazy(() => import('../pages/NotFound'));
 const VisibleTaskList = lazy(() => import('../pages/VisibleTaskList'));
 
 const routes = [
-    {
-        path: '/',
-        exact: true,
-        strict: true,
-        render: props => <Home {...props} />
-    }, {
-        path: '/add-task',
-        strict: true,
-        render: props => <AddTask {...props} />
-    }, {
-        path: '/task-list',
-        strict: true,
-        render: props => <VisibleTaskList {...props} />
-    }, {
-        path: '/task/:id',
-        strict: true,
-        render: props => <TaskCard {...props} />
-    }, {
-        render: props => <NotFound {...props} />
-    }
+  {
+    path: '/',
+    exact: true,
+    render: props => <Home {...props} />
+  },
+  {
+    path: '/add-task',
+    render: props => <AddTask {...props} />
+  },
+  {
+    path: '/task-list',
+    render: props => <VisibleTaskList {...props} />
+  },
+  {
+    path: '/task/:id',
+    render: props => <TaskCard {...props} />
+  },
+  {
+    path: '*',
+    render: props => <NotFound {...props} />
+  }
 ];
 
 export default routes;

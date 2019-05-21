@@ -1,7 +1,7 @@
 export const VISIBILITY_FILTERS = {
-    ALL: 'ALL',
-    ACTIVE: 'ACTIVE',
-    COMPLETED: 'COMPLETED',
+  ALL: 'ALL',
+  ACTIVE: 'ACTIVE',
+  COMPLETED: 'COMPLETED'
 };
 
 export const DATA_STORE_KEY = 'TASK_MANAGER';

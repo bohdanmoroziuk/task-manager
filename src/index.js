@@ -19,18 +19,15 @@ import './index.css';
 library.add(faReact);
 
 const Index = () => (
-    <ErrorBoundary>
-        <Provider store={store}>
-            <Router>
-                <App />
-            </Router>   
-        </Provider>
-    </ErrorBoundary>
+  <ErrorBoundary>
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
+  </ErrorBoundary>
 );
 
-render(
-    <Index />, 
-    document.getElementById('root')
-);
+render(<Index />, document.getElementById('root'));
 
 serviceWorker.unregister();

@@ -1,16 +1,27 @@
 import React, { Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-import Loader from '../components/shared/Loader';
+const RouterOutlet = ({ routes, fallback = null }) => {
+  const renderRoute = route => <Route key={route.path} {...route} />;
 
-const RouterOutlet = ({ routes }) => (
-    <Suspense fallback={<Loader />}>
-        <Switch>
-            {routes && routes.map((route, index) => (
-                <Route key={index} {...route} />
-            ))}
-        </Switch>
+  return (
+    <Suspense fallback={fallback}>
+      <Switch>{routes.map(renderRoute)}</Switch>
     </Suspense>
-);
+  );
+};
+
+RouterOutlet.propTypes = {
+  routes: PropTypes.arrayOf(
+    PropTypes.shape({
+      path: PropTypes.string.isRequired,
+      exact: PropTypes.bool,
+      render: PropTypes.func,
+      component: PropTypes.node
+    })
+  ).isRequired,
+  fallback: PropTypes.node
+};
 
 export default RouterOutlet;
