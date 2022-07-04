@@ -1,5 +1,7 @@
 # Task Manager
 
+> A simple task manager implemented using React and Redux.
+
 ## Preview
 
 <img src="./empty-task-list.png" alt="Empty task list" />
